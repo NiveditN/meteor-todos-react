@@ -44,7 +44,6 @@ class App extends Component {
 
 	renderTasks() {
 		let filteredTasks = this.props.tasks;
-		console.log('FILTERED TASKS:', filteredTasks)
 		if(this.state.hideCompleted) {
 			filteredTasks = filteredTasks.filter(task => !task.checked);
 		}
